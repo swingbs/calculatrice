@@ -88,7 +88,9 @@ public class Fenetre_princ extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Fenetre_princ().setVisible(true);
+                Fenetre_princ fenetre = new Fenetre_princ();
+                fenetre.setLocationRelativeTo(null);
+                fenetre.setVisible(true);
             }
         });
     }
