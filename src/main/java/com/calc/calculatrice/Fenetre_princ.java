@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Views;
+package com.calc.calculatrice;
 
 /**
  *
@@ -27,9 +27,9 @@ public class Fenetre_princ extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        pave_numerik1 = new Views.Pave_numerik();
-        pave_operateur2 = new Views.Pave_operateur();
-        pave_resultat2 = new Views.Pave_resultat();
+        pave_numerik1 = new com.calc.calculatrice.Pave_numerik();
+        pave_operateur2 = new com.calc.calculatrice.Pave_operateur();
+        pave_resultat2 = new com.calc.calculatrice.Pave_resultat();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,16 +37,20 @@ public class Fenetre_princ extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pave_resultat2, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(pave_numerik1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pave_numerik1, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pave_operateur2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pave_resultat2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(pave_resultat2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(pave_resultat2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pave_operateur2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -96,8 +100,8 @@ public class Fenetre_princ extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private Views.Pave_numerik pave_numerik1;
-    private Views.Pave_operateur pave_operateur2;
-    private Views.Pave_resultat pave_resultat2;
+    private com.calc.calculatrice.Pave_numerik pave_numerik1;
+    private com.calc.calculatrice.Pave_operateur pave_operateur2;
+    private com.calc.calculatrice.Pave_resultat pave_resultat2;
     // End of variables declaration//GEN-END:variables
 }
